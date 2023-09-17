@@ -581,6 +581,10 @@ video {
   margin-bottom: 11rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .flex {
   display: flex;
 }
@@ -720,6 +724,12 @@ video {
   opacity: 0.4;
 }
 
+@media (min-width: 768px) {
+  .md\:w-180 {
+    width: 32rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:mx-0 {
     margin-left: 0px;
@@ -728,6 +738,10 @@ video {
 
   .lg\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:flex {
