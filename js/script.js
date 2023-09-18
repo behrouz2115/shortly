@@ -20,5 +20,15 @@ function validURL(str) {
 
 function formSubmit(e) {
   e.preventDefault();
-  console.log("this is work so do not wory");
+    if (input.value === '') {
+        errMsg.innerHTML = 'Please enter something';
+        input.classList.add("border-red");
+    } else if (!validURL(input.value)) {
+        errMsg.innerHTML = 'Please enter a valid URL';
+        input.classList.add("border-red");
+    } else {
+        errMsg.innerHTML = '';
+        input.classList.remove("border-red");
+        alert('success');
+  }
 }
